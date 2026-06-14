@@ -1,9 +1,11 @@
 sources:
   - name: stripe
+    description: Clone of Stripe Database
     database: raw
     schema: stripe
     tables:
       - name: payment
+        description: Raw payment data
         config:
           freshness:
             loaded_at_field: _batched_at
